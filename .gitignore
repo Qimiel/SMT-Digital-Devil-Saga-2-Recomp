@@ -1,0 +1,23 @@
+# Everything below is produced from the user's own disc image by
+# build_from_iso.ps1 (game code and data must not be committed).
+/dist/
+/generated/
+/guest/
+/vu1gen/
+/vu1_harvest/*.bin
+/vu0_harvest/*.bin
+
+# Build trees, downloaded toolchain, compiler cache
+/build/
+/.tools/
+/.ccache/
+/recompiler/build/
+
+# Run and debugging output
+run_log.txt*
+build_log.txt
+*.ppm
+*.pgm
+snapshot_*.png
+profile.txt
+__pycache__/

@@ -1,0 +1,22 @@
+# DDS2 US (SLUS_211.52) regeneration with the vendored recompiler
+# (pc_port/recomp/recompiler). Same unit map and settings as the original pass in
+# analysis/decompilation/dds2.toml, plus pointer-referenced entry points found by
+# tools/find_code_pointers.py. Paths are relative to E:/files/DDS.
+# Development copy: build_from_iso.ps1 writes the same settings, with paths into
+# this tree, to build/recompiler/dds2_recomp.toml.
+[general]
+input = 'E:/files/DDS/SLUS_211.52'
+ghidra_output = 'E:/files/DDS/recovered/code/ee/recomp_units.csv'
+output = 'E:/files/DDS/pc_port/recomp/generated'
+extra_entry_points_file = 'E:/files/DDS/pc_port/recomp/research/extra_entry_points.txt'
+single_file_output = false
+low_memory_mode = true
+output_worker_threads = 4
+patch_syscalls = false
+patch_cop0 = false
+patch_cache = false
+stubs = []
+skip = []
+
+[patches]
+instructions = []
