@@ -1,16 +1,9 @@
 # SMT DDS2 recompilation
 
-This directory turns the PS2Recomp translation of `SLUS_211.52` into a native
-Windows executable, `build/dds2.exe`. Every EE routine in the game runs as
-compiled x86-64 code; there is no MIPS interpreter or emulator core. PS2 hardware
-and OS services come from a vendored, DDS2-patched copy of the PS2Recomp runtime
-(`runtime/`): a guest memory map, an EE thread scheduler, HLE kernel syscalls,
-HLE IOP services, a software GS rasterizer, VIF1/VU1 interpreters and raylib for
-the window, input and audio output.
+Turn the Ps2 iso into a native windows executable.
+Started with 2 since I was more interested in its assets, once the project concludes DDS1 should be trivial.
+Currently the game extends into wandering around occupied sector, the scripted forced battle crashes the game.
 
-No game code or data is part of this tree: everything game-derived (the
-translated code, the microcode, the disc files the executable reads) is
-produced from your own disc image of the USA release (SLUS-21152).
 
 ## Build from a disc image
 
