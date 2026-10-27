@@ -143,6 +143,6 @@ microcode works the same way with `PS2X_VU0_HARVEST=vu0_harvest` and
 
 ## Credits
 Thanks to:
-[TGE](https://github.com/tge-was-taken): for providing tools to study the DDS3 engine.
-[PS2Recomp](https://github.com/ran-j/PS2Recomp): Recomp tool for ps2.
+[TGE](https://github.com/tge-was-taken): for providing tools to study the DDS3 engine.  
+[PS2Recomp](https://github.com/ran-j/PS2Recomp): Recomp tool for ps2.  
 [dds-decomp](https://github.com/Megami-Decomps/dds-decomp): for providing decompiled functions and tables for DDS1&2.
